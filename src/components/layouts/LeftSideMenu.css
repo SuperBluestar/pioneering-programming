@@ -1,0 +1,82 @@
+:root {
+  --var-expand-width: 20rem;
+  --var-collapse-width: 4rem;
+}
+
+.left-side-menu {
+  transition: width 0.3s ease-in;
+  background-color: var(--left-part-background);
+  color: var(--any-text-in-left-part);
+  height: calc(100vh - var(--top-bar-height));
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.left-side-menu.collapse {
+  width: var(--var-collapse-width);
+}
+
+.left-side-menu.expand {
+  width: var(--var-expand-width);
+}
+
+.left-side-menu .toggle-btn {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  transform: translateX(50%);
+  cursor: pointer;
+  padding: var(--dim-1) var(--dim-2);
+  background-color: yellow;
+  border-radius: 1000px;
+}
+
+.left-side-menu .left-side-menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side-menu .left-side-menu-list {
+  max-height: 100%;
+}
+
+.left-side-menu .menu-item {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  gap: 1rem;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}
+
+.left-side-menu .menu-item:hover {
+  width: var(--var-expand-width);
+}
+
+.left-side-menu .menu-item.active, .left-side-menu .menu-item:hover {
+  cursor: pointer;
+  box-shadow: 0rem 0rem 1rem inset;
+  font-weight: 700;
+}
+
+.left-side-menu .title-expand {
+  display: block;
+}
+
+.left-side-menu .title-collapse {
+  display: none;
+}
+
+.left-side-menu .menu-item:hover .title-collapse {
+  display: block;
+}
+
+.left-side-menu .icon-container {
+  width: var(--var-collapse-width);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

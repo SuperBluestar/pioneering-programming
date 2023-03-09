@@ -1,0 +1,48 @@
+.page-1 {
+  display: grid;
+  grid-template: 
+    "a b" / 1fr 1fr;
+  height: 100%;
+}
+
+.page-1 .left-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: var(--dim-4);
+  overflow: auto;
+}
+
+.page-1 .right-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: var(--dim-4);
+  overflow: auto;
+}
+
+.page-1 .input-group {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.page-1 .input-group input, .page-1 .input-group textarea {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.page-1 .history-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.page-1 .history-item .timestamp {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.page-1 .history-item .message {
+  word-break: break-all;
+}

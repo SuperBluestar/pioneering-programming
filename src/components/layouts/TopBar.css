@@ -1,0 +1,8 @@
+.top-bar {
+  color: var(--top-bar-text-color);
+  background-color: var(--top-bar-background);
+  height: var(--top-bar-height);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

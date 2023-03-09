@@ -1,0 +1,16 @@
+.main-container {
+  display: flex;
+}
+
+.main-container > .left-side-bar {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.main-container > .page-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: calc(100vh - var(--top-bar-height));
+  background-color: var(--right-part-background);
+  color: var(--any-text-right-part);
+}

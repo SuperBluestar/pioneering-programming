@@ -1,0 +1,41 @@
+:root {
+  /* colors */
+  --top-bar-background: #808080;
+  --top-bar-text-color: #ff0;
+  --button-background: #cc0000;
+  --button-text: white;
+  --left-part-background: #cecece;
+  --any-text-in-left-part: #2f4f4f;
+  --right-part-background: white;
+  --any-text-in-right-part: #000000;
+  /* dimentions */
+  --dim-1: 0.25rem;
+  --dim-2: 0.5rem;
+  --dim-3: 0.75rem;
+  --dim-4: 1rem;
+
+  /* variables in this project */
+  --top-bar-height: 2rem;
+}
+
+body.light, body {
+  --top-bar-background: #808080;
+  --top-bar-text-color: #ff0;
+  --button-background: #cc0000;
+  --button-text: white;
+  --left-part-background: #cecece;
+  --any-text-in-left-part: #2f4f4f;
+  --right-part-background: white;
+  --any-text-in-right-part: #000000;
+}
+
+body.dark {
+  --top-bar-background: #c0c0c0;
+  --top-bar-text-color: #2f4f4f;
+  --button-background: #f0f8ff;
+  --button-text: #800080;
+  --left-part-background: white;
+  --any-text-in-left-part: #696969;
+  --right-part-background: #008080;
+  --any-text-in-right-part: white;
+}

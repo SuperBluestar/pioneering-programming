@@ -1,0 +1,30 @@
+/* margin */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* padding */
+.py-1 {
+  padding-top: var(--dim-1);
+  padding-bottom: var(--dim-1);
+}
+.px-2 {
+  padding-left: var(--dim-2);
+  padding-right: var(--dim-2);
+}
+
+/* width */
+.w-full {
+  width: 100%;
+}
+
+/* button */
+button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}
+
+/* pointer */
+.cursor-pointer {
+  cursor: pointer;
+}
